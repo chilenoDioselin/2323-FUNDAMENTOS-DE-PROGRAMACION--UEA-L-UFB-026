@@ -32,7 +32,7 @@ array_3x6_mixed = [[1, 2.2, 'apple', 4, 5.5, 'melon'], [6, 7.7, 'banana', 8, 9.9
 
 # 9. Declare 2 variables tridimensionales 2x3x2, 5x5x5, 3x6x2 y asigne valores enteros (6 variables en total)
 array_2x3x2_integers = [[[1, 2], [3, 4], [5, 6]], [[7, 8], [9, 10], [11, 12]]]
-array_5
+
 
 # 9. Declare 2 variables tridimensionales 2x3x2, 5x5x5, 3x6x2 y asigne valores enteros (6 variables en total)
 array_2x3x2_integers = [[[1, 2], [3, 4], [5, 6]], [[7, 8], [9, 10], [11, 12]]]
