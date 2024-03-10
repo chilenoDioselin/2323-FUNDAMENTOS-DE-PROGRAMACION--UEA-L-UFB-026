@@ -119,20 +119,11 @@ temperaturas = [
     ]
 ]
 
-# Calcular el promedio de temperaturas para cada ciudad y semana
-no_ciudad = 0
-for ciudad in temperaturas:
-    no_ciudad = no_ciudad + 1
-    print(f'CIUDAD No. {no_ciudad}')
-    no_semana = 0
-    suma_promedio = 0
-    for semana in ciudad:
-        no_semana += 1
-        suma = 0
-        for dia in semana:
-            suma = suma + dia['temp']
-        promedio = round(suma / len(semana), 1)
-        suma_promedio += promedio
-        print(f'El promedio semana No. {no_semana} es: {promedio}')
-    promedio_ciudad = round(suma_promedio / len(ciudad), 1)
-    print(f'El promedio mensual es: {promedio_ciudad}')
+#Iterando sobre las ciudades, semanas y días para calcular el promedio de temperaturas
+for ciudad_index, ciudad in enumerate(temperaturas, start=1):
+    print(f'CIUDAD No. {ciudad_index}')
+    for semana_index, semana in enumerate(ciudad, start=1):
+        # Calculando el promedio de temperaturas para la semana actual
+        temperatura_semana = [dia["temp"] for dia in semana]  # Lista de temperaturas de la semana
+        promedio_semana = sum(temperatura_semana) / len(temperatura_semana)  # Calculando el promedio
+        print(f'El promedio de la semana No. {semana_index} es: {promedio_semana:.2f}')
